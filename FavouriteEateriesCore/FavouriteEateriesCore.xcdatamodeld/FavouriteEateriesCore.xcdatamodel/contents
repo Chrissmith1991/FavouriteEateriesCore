@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
-        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20C69" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Eatery" representedClassName="Eatery" syncable="YES" codeGenerationType="class">
+        <attribute name="baseImage" attributeType="String" defaultValueString=""/>
+        <attribute name="desc" attributeType="String" defaultValueString=""/>
+        <attribute name="imageURL" attributeType="String" defaultValueString=""/>
+        <attribute name="name" attributeType="String" defaultValueString=""/>
+        <attribute name="story" attributeType="String" defaultValueString=""/>
+        <relationship name="reviews" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Review" inverseName="eatery" inverseEntity="Review"/>
+    </entity>
+    <entity name="Review" representedClassName="Review" syncable="YES" codeGenerationType="class">
+        <attribute name="content" optional="YES" attributeType="String"/>
+        <attribute name="raiting" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="user" optional="YES" attributeType="String"/>
+        <relationship name="eatery" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Eatery" inverseName="reviews" inverseEntity="Eatery"/>
     </entity>
     <elements>
-        <element name="Item" positionX="-63" positionY="-18" width="128" height="44"/>
+        <element name="Eatery" positionX="-68.5" positionY="-158.5" width="128" height="133"/>
+        <element name="Review" positionX="212.5" positionY="-21" width="128" height="103"/>
     </elements>
 </model>
