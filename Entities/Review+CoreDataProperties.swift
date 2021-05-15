@@ -2,7 +2,7 @@
 //  Review+CoreDataProperties.swift
 //  FavouriteEateriesCore
 //
-//  Created by Christopher Smith on 14/5/21.
+//  Created by Christopher Smith on 15/5/21.
 //
 //
 
@@ -16,13 +16,9 @@ extension Review {
         return NSFetchRequest<Review>(entityName: "Review")
     }
 
-    @NSManaged public var user: String?
     @NSManaged public var content: String?
     @NSManaged public var raiting: Int16
+    @NSManaged public var user: String?
     @NSManaged public var eatery: Eatery?
-
-}
-
-extension Review : Identifiable {
 
 }

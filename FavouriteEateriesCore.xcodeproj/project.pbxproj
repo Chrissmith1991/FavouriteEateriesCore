@@ -51,12 +51,14 @@
 		EE705CAE264E7F3D006CB52B /* FavouriteEateriesCoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FavouriteEateriesCoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE705CB2264E7F3D006CB52B /* FavouriteEateriesCoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteEateriesCoreUITests.swift; sourceTree = "<group>"; };
 		EE705CB4264E7F3D006CB52B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EE705CCF264E80DD006CB52B /* Eatery+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Eatery+CoreDataClass.swift"; sourceTree = "<group>"; };
-		EE705CD0264E80DD006CB52B /* Review+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Review+CoreDataClass.swift"; sourceTree = "<group>"; };
-		EE705CD1264E80DD006CB52B /* Eatery+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Eatery+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		EE705CD2264E80DD006CB52B /* Review+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Review+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		EEC8D7D8264F54B0004BD4F6 /* Eatery+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Eatery+ViewModel.swift"; sourceTree = "<group>"; };
 		EEC8D7DE264F5949004BD4F6 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		EEC8D7F4264F5FFB004BD4F6 /* Eatery+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Eatery+CoreDataClass.swift"; sourceTree = "<group>"; };
+		EEC8D7F5264F5FFB004BD4F6 /* Eatery+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Eatery+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EEC8D7F6264F5FFB004BD4F6 /* EateryGroup+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EateryGroup+CoreDataClass.swift"; sourceTree = "<group>"; };
+		EEC8D7F7264F5FFB004BD4F6 /* EateryGroup+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EateryGroup+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EEC8D7F8264F5FFB004BD4F6 /* Review+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Review+CoreDataClass.swift"; sourceTree = "<group>"; };
+		EEC8D7F9264F5FFB004BD4F6 /* Review+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Review+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,10 +151,12 @@
 		EE705CCE264E80DD006CB52B /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				EE705CCF264E80DD006CB52B /* Eatery+CoreDataClass.swift */,
-				EE705CD0264E80DD006CB52B /* Review+CoreDataClass.swift */,
-				EE705CD1264E80DD006CB52B /* Eatery+CoreDataProperties.swift */,
-				EE705CD2264E80DD006CB52B /* Review+CoreDataProperties.swift */,
+				EEC8D7F4264F5FFB004BD4F6 /* Eatery+CoreDataClass.swift */,
+				EEC8D7F5264F5FFB004BD4F6 /* Eatery+CoreDataProperties.swift */,
+				EEC8D7F6264F5FFB004BD4F6 /* EateryGroup+CoreDataClass.swift */,
+				EEC8D7F7264F5FFB004BD4F6 /* EateryGroup+CoreDataProperties.swift */,
+				EEC8D7F8264F5FFB004BD4F6 /* Review+CoreDataClass.swift */,
+				EEC8D7F9264F5FFB004BD4F6 /* Review+CoreDataProperties.swift */,
 			);
 			path = Entities;
 			sourceTree = SOURCE_ROOT;

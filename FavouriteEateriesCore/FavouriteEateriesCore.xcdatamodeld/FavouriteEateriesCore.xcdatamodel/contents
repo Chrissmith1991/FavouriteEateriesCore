@@ -6,7 +6,13 @@
         <attribute name="imageURL" attributeType="String" defaultValueString=""/>
         <attribute name="name" attributeType="String" defaultValueString=""/>
         <attribute name="story" attributeType="String" defaultValueString=""/>
+        <relationship name="group" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EateryGroup" inverseName="eateries" inverseEntity="EateryGroup"/>
         <relationship name="reviews" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Review" inverseName="eatery" inverseEntity="Review"/>
+    </entity>
+    <entity name="EateryGroup" representedClassName="EateryGroup" syncable="YES" codeGenerationType="class">
+        <attribute name="listName" optional="YES" attributeType="String"/>
+        <attribute name="location" optional="YES" attributeType="String"/>
+        <relationship name="eateries" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Eatery" inverseName="group" inverseEntity="Eatery"/>
     </entity>
     <entity name="Review" representedClassName="Review" syncable="YES" codeGenerationType="class">
         <attribute name="content" optional="YES" attributeType="String"/>
@@ -15,7 +21,8 @@
         <relationship name="eatery" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Eatery" inverseName="reviews" inverseEntity="Eatery"/>
     </entity>
     <elements>
-        <element name="Eatery" positionX="-68.5" positionY="-158.5" width="128" height="133"/>
-        <element name="Review" positionX="212.5" positionY="-21" width="128" height="103"/>
+        <element name="Eatery" positionX="-268" positionY="-191.5" width="128" height="148"/>
+        <element name="Review" positionX="209" positionY="-76.5" width="128" height="103"/>
+        <element name="EateryGroup" positionX="-634.5" positionY="-314.5" width="128" height="88"/>
     </elements>
 </model>

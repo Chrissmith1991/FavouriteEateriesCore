@@ -2,7 +2,7 @@
 //  Eatery+CoreDataProperties.swift
 //  FavouriteEateriesCore
 //
-//  Created by Christopher Smith on 14/5/21.
+//  Created by Christopher Smith on 15/5/21.
 //
 //
 
@@ -16,12 +16,13 @@ extension Eatery {
         return NSFetchRequest<Eatery>(entityName: "Eatery")
     }
 
-    @NSManaged public var name: String?
-    @NSManaged public var desc: String?
-    @NSManaged public var story: String?
-    @NSManaged public var imageURL: String?
     @NSManaged public var baseImage: String?
+    @NSManaged public var desc: String?
+    @NSManaged public var imageURL: String?
+    @NSManaged public var name: String?
+    @NSManaged public var story: String?
     @NSManaged public var reviews: NSSet?
+    @NSManaged public var group: EateryGroup?
 
 }
 
@@ -39,9 +40,5 @@ extension Eatery {
 
     @objc(removeReviews:)
     @NSManaged public func removeFromReviews(_ values: NSSet)
-
-}
-
-extension Eatery : Identifiable {
 
 }
