@@ -15,6 +15,7 @@
 		EE705C9D264E7F3D006CB52B /* FavouriteEateriesCore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE705C9B264E7F3D006CB52B /* FavouriteEateriesCore.xcdatamodeld */; };
 		EE705CA8264E7F3D006CB52B /* FavouriteEateriesCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE705CA7264E7F3D006CB52B /* FavouriteEateriesCoreTests.swift */; };
 		EE705CB3264E7F3D006CB52B /* FavouriteEateriesCoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE705CB2264E7F3D006CB52B /* FavouriteEateriesCoreUITests.swift */; };
+		EEC8D7D9264F54B0004BD4F6 /* Eatery+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC8D7D8264F54B0004BD4F6 /* Eatery+ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		EE705CD0264E80DD006CB52B /* Review+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Review+CoreDataClass.swift"; sourceTree = "<group>"; };
 		EE705CD1264E80DD006CB52B /* Eatery+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Eatery+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		EE705CD2264E80DD006CB52B /* Review+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Review+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EEC8D7D8264F54B0004BD4F6 /* Eatery+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Eatery+ViewModel.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		EE705C8F264E7F3C006CB52B /* FavouriteEateriesCore */ = {
 			isa = PBXGroup;
 			children = (
+				EEC8D7CF264F53E7004BD4F6 /* Models */,
 				EE705CCE264E80DD006CB52B /* Entities */,
 				EE705C90264E7F3C006CB52B /* FavouriteEateriesCoreApp.swift */,
 				EE705C92264E7F3C006CB52B /* ContentView.swift */,
@@ -151,6 +154,14 @@
 			);
 			path = Entities;
 			sourceTree = SOURCE_ROOT;
+		};
+		EEC8D7CF264F53E7004BD4F6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EEC8D7D8264F54B0004BD4F6 /* Eatery+ViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -285,6 +296,7 @@
 				EE705C93264E7F3C006CB52B /* ContentView.swift in Sources */,
 				EE705C9D264E7F3D006CB52B /* FavouriteEateriesCore.xcdatamodeld in Sources */,
 				EE705C91264E7F3C006CB52B /* FavouriteEateriesCoreApp.swift in Sources */,
+				EEC8D7D9264F54B0004BD4F6 /* Eatery+ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
