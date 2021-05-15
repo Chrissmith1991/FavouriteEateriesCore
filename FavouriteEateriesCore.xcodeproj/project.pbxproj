@@ -17,6 +17,7 @@
 		EE705CB3264E7F3D006CB52B /* FavouriteEateriesCoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE705CB2264E7F3D006CB52B /* FavouriteEateriesCoreUITests.swift */; };
 		EEC8D7D9264F54B0004BD4F6 /* Eatery+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC8D7D8264F54B0004BD4F6 /* Eatery+ViewModel.swift */; };
 		EEC8D7DF264F5949004BD4F6 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC8D7DE264F5949004BD4F6 /* ListView.swift */; };
+		EEC8D801264F6384004BD4F6 /* EateryGroup+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC8D800264F6384004BD4F6 /* EateryGroup+ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,11 +55,12 @@
 		EEC8D7D8264F54B0004BD4F6 /* Eatery+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Eatery+ViewModel.swift"; sourceTree = "<group>"; };
 		EEC8D7DE264F5949004BD4F6 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		EEC8D7F4264F5FFB004BD4F6 /* Eatery+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Eatery+CoreDataClass.swift"; sourceTree = "<group>"; };
-		EEC8D7F5264F5FFB004BD4F6 /* Eatery+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Eatery+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		EEC8D7F6264F5FFB004BD4F6 /* EateryGroup+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EateryGroup+CoreDataClass.swift"; sourceTree = "<group>"; };
-		EEC8D7F7264F5FFB004BD4F6 /* EateryGroup+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EateryGroup+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		EEC8D7F8264F5FFB004BD4F6 /* Review+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Review+CoreDataClass.swift"; sourceTree = "<group>"; };
-		EEC8D7F9264F5FFB004BD4F6 /* Review+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Review+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EEC8D800264F6384004BD4F6 /* EateryGroup+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EateryGroup+ViewModel.swift"; sourceTree = "<group>"; };
+		EEC8D805264F6584004BD4F6 /* Eatery+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Eatery+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EEC8D806264F6584004BD4F6 /* Review+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Review+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EEC8D807264F6584004BD4F6 /* EateryGroup+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EateryGroup+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,11 +154,11 @@
 			isa = PBXGroup;
 			children = (
 				EEC8D7F4264F5FFB004BD4F6 /* Eatery+CoreDataClass.swift */,
-				EEC8D7F5264F5FFB004BD4F6 /* Eatery+CoreDataProperties.swift */,
+				EEC8D805264F6584004BD4F6 /* Eatery+CoreDataProperties.swift */,
 				EEC8D7F6264F5FFB004BD4F6 /* EateryGroup+CoreDataClass.swift */,
-				EEC8D7F7264F5FFB004BD4F6 /* EateryGroup+CoreDataProperties.swift */,
+				EEC8D807264F6584004BD4F6 /* EateryGroup+CoreDataProperties.swift */,
 				EEC8D7F8264F5FFB004BD4F6 /* Review+CoreDataClass.swift */,
-				EEC8D7F9264F5FFB004BD4F6 /* Review+CoreDataProperties.swift */,
+				EEC8D806264F6584004BD4F6 /* Review+CoreDataProperties.swift */,
 			);
 			path = Entities;
 			sourceTree = SOURCE_ROOT;
@@ -165,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				EEC8D7D8264F54B0004BD4F6 /* Eatery+ViewModel.swift */,
+				EEC8D800264F6384004BD4F6 /* EateryGroup+ViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				EE705C93264E7F3C006CB52B /* ContentView.swift in Sources */,
 				EEC8D7DF264F5949004BD4F6 /* ListView.swift in Sources */,
 				EE705C9D264E7F3D006CB52B /* FavouriteEateriesCore.xcdatamodeld in Sources */,
+				EEC8D801264F6384004BD4F6 /* EateryGroup+ViewModel.swift in Sources */,
 				EE705C91264E7F3C006CB52B /* FavouriteEateriesCoreApp.swift in Sources */,
 				EEC8D7D9264F54B0004BD4F6 /* Eatery+ViewModel.swift in Sources */,
 			);

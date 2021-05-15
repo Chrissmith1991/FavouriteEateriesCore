@@ -15,10 +15,9 @@ struct ContentView: View {
         sortDescriptors: [NSSortDescriptor(keyPath: \EateryGroup.listName, ascending: true)],
         animation: .default)
     private var eateryGroups: FetchedResults<EateryGroup>
-
     var body: some View {
         NavigationView {
-            ListView(eateries: eateryGroups.eateries)
+            ListView(eateryGroup: (eateryGroups.first ?? EateryGroup(context: viewContext)))
         }
     }
 }
