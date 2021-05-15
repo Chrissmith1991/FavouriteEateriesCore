@@ -16,6 +16,7 @@
 		EE705CA8264E7F3D006CB52B /* FavouriteEateriesCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE705CA7264E7F3D006CB52B /* FavouriteEateriesCoreTests.swift */; };
 		EE705CB3264E7F3D006CB52B /* FavouriteEateriesCoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE705CB2264E7F3D006CB52B /* FavouriteEateriesCoreUITests.swift */; };
 		EEC8D7D9264F54B0004BD4F6 /* Eatery+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC8D7D8264F54B0004BD4F6 /* Eatery+ViewModel.swift */; };
+		EEC8D7DF264F5949004BD4F6 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC8D7DE264F5949004BD4F6 /* ListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		EE705CD1264E80DD006CB52B /* Eatery+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Eatery+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		EE705CD2264E80DD006CB52B /* Review+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Review+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		EEC8D7D8264F54B0004BD4F6 /* Eatery+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Eatery+ViewModel.swift"; sourceTree = "<group>"; };
+		EEC8D7DE264F5949004BD4F6 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,10 +107,10 @@
 		EE705C8F264E7F3C006CB52B /* FavouriteEateriesCore */ = {
 			isa = PBXGroup;
 			children = (
+				EEC8D7DD264F5922004BD4F6 /* Views */,
 				EEC8D7CF264F53E7004BD4F6 /* Models */,
 				EE705CCE264E80DD006CB52B /* Entities */,
 				EE705C90264E7F3C006CB52B /* FavouriteEateriesCoreApp.swift */,
-				EE705C92264E7F3C006CB52B /* ContentView.swift */,
 				EE705C94264E7F3D006CB52B /* Assets.xcassets */,
 				EE705C99264E7F3D006CB52B /* Persistence.swift */,
 				EE705C9E264E7F3D006CB52B /* Info.plist */,
@@ -161,6 +163,15 @@
 				EEC8D7D8264F54B0004BD4F6 /* Eatery+ViewModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		EEC8D7DD264F5922004BD4F6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EE705C92264E7F3C006CB52B /* ContentView.swift */,
+				EEC8D7DE264F5949004BD4F6 /* ListView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +305,7 @@
 			files = (
 				EE705C9A264E7F3D006CB52B /* Persistence.swift in Sources */,
 				EE705C93264E7F3C006CB52B /* ContentView.swift in Sources */,
+				EEC8D7DF264F5949004BD4F6 /* ListView.swift in Sources */,
 				EE705C9D264E7F3D006CB52B /* FavouriteEateriesCore.xcdatamodeld in Sources */,
 				EE705C91264E7F3C006CB52B /* FavouriteEateriesCoreApp.swift in Sources */,
 				EEC8D7D9264F54B0004BD4F6 /* Eatery+ViewModel.swift in Sources */,
