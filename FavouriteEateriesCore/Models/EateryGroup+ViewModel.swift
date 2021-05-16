@@ -15,6 +15,11 @@ extension EateryGroup {
         set { eateries = NSOrderedSet(array: newValue)}
     }
     
+    var groupName: String {
+        get { listName ?? "default List" }
+        set { listName = newValue }
+    }
+    
     var viewContext: NSManagedObjectContext {
         managedObjectContext ?? NSManagedObjectContext(concurrencyType:
          .mainQueueConcurrencyType)

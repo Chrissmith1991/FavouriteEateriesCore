@@ -17,15 +17,10 @@ struct ListItemView: View {
                  TextField("Image URL", text: $eatery.imageLink, onCommit: {
                     try? viewContext.save()
                  })
-                 TextField("BaseImageName", text: $eatery.blankImage, onCommit: {
-                    try? viewContext.save()
-                 })
              } else {
-                 if eatery.imageLink != "" {
-                     getImageFromUrl(url: eatery.imageLink)
-                 } else if eatery.blankImage != "" {
-                     Image(eatery.blankImage)
-                 } else {
+                if eatery.imageLink == "" && eatery.blankImage != "" {
+                    Image(eatery.blankImage)
+                } else {
                      getImageFromUrl(url: eatery.imageLink)
                  }
              }

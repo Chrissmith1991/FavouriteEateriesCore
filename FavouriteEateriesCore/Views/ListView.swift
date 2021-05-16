@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ListView: View {
     @Environment(\.managedObjectContext) private var viewContext
+    @Environment(\.editMode) var mode
     @ObservedObject var eateryGroup: EateryGroup
     var body: some View {
         List {
@@ -28,6 +29,8 @@ struct ListView: View {
                                 },
                              trailing:
                                 EditButton())
+        .navigationTitle(eateryGroup.groupName)
     }
 }
+
 

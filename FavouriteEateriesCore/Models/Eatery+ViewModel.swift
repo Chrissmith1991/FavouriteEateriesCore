@@ -23,8 +23,7 @@ extension Eatery {
         set { imageURL = newValue }
     }
     var blankImage: String {
-        get { baseImage ?? "" }
-        set { baseImage = newValue }
+        get { baseImage ?? "noImage" }
     }
     var storyString: String {
         get { story ?? "" }
