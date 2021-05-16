@@ -20,7 +20,7 @@ extension Eatery {
     @NSManaged public var desc: String?
     @NSManaged public var imageURL: String?
     @NSManaged public var name: String?
-    @NSManaged public var notes: String?
+    @NSManaged public var story: String?
     @NSManaged public var group: EateryGroup?
     @NSManaged public var reviews: NSOrderedSet?
 
@@ -58,5 +58,9 @@ extension Eatery {
 
     @objc(removeReviews:)
     @NSManaged public func removeFromReviews(_ values: NSOrderedSet)
+
+}
+
+extension Eatery : Identifiable {
 
 }

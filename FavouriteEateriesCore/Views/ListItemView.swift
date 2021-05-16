@@ -22,7 +22,7 @@ struct ListItemView: View {
                     Image(eatery.blankImage)
                 } else {
                      getImageFromUrl(url: eatery.imageLink)
-                 }
+                }
              }
              NavigationLink(
                  destination: DetailView(eatery: eatery)
