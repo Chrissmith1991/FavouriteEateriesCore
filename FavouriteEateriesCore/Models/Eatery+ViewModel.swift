@@ -14,4 +14,20 @@ extension Eatery {
         get { name ?? "unamed Eatery" }
         set { name = newValue }
     }
+    var descString: String {
+        get { desc ?? "no description" }
+        set { desc = newValue }
+    }
+    var imageLink: String {
+        get { imageURL ?? "" }
+        set { imageURL = newValue }
+    }
+    var blankImage: String {
+        get { baseImage ?? "" }
+        set { baseImage = newValue }
+    }
+    var storyString: String {
+        get { story ?? "" }
+        set { story = newValue }
+    }
 }

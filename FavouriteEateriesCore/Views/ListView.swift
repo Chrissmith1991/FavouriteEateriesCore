@@ -13,7 +13,7 @@ struct ListView: View {
     var body: some View {
         List {
             ForEach(eateryGroup.allEateries) { eatery in
-                Text("Eatery: \(eatery.nameString)")
+                ListItemView(eatery: eatery)
             }
             .onDelete { offsets in
                 withAnimation {eateryGroup.destroy(offsets: offsets)}
