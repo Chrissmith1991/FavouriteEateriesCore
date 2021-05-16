@@ -191,9 +191,9 @@
 		EEC8D7CF264F53E7004BD4F6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EE1E9B342650EED200A87BD6 /* Review+ViewModel.swift */,
 				EEC8D7D8264F54B0004BD4F6 /* Eatery+ViewModel.swift */,
 				EEC8D800264F6384004BD4F6 /* EateryGroup+ViewModel.swift */,
-				EE1E9B342650EED200A87BD6 /* Review+ViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
