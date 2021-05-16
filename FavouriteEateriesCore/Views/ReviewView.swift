@@ -41,7 +41,6 @@ struct ReviewContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
     @Environment(\.editMode) var mode
     @ObservedObject var review: Review
-
     var body: some View {
         VStack {
             HStack {
