@@ -12,26 +12,27 @@ struct ListView: View {
     @Environment(\.editMode) var mode
     @ObservedObject var eateryGroup: EateryGroup
     var body: some View {
-        VStack {
-            List {
-                ForEach(eateryGroup.allEateries) { eatery in
-                    ListItemView(eatery: eatery)
-                }
-                .onDelete { offsets in
-                    withAnimation {eateryGroup.destroy(offsets: offsets)}
-                }
-            }.navigationBarItems(leading:
-                                    Button(action: {
-                                        withAnimation {
-                                            eateryGroup.create()
-                                        }
-                                    }) {
-                                        Label("", systemImage: "plus")
-                                    },
-                                 trailing:
-                                    EditButton())
-            .navigationTitle(eateryGroup.groupName)
-        }
+        List {
+            ForEach(eateryGroup.allEateries) { eatery in
+                ListItemView(eatery: eatery)
+            }
+            .onDelete { offsets in
+                withAnimation {eateryGroup.destroy(offsets: offsets)}
+            }.onMove(perform: { indices, newOffset in
+                eateryGroup.move(from: indices, to: newOffset)
+            })
+        }.navigationBarItems(leading:
+                                Button(action: {
+                                    withAnimation {
+                                        eateryGroup.create()
+                                    }}
+                                ) {
+                                    Label("", systemImage: "plus")
+                                },
+                             trailing:
+                                EditButton()
+        )
+        .navigationTitle(eateryGroup.groupName)
     }
 }
 

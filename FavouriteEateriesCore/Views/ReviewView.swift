@@ -32,6 +32,8 @@ struct ReviewView: View {
                 }.onDelete(perform: { offsets in
                     eatery.destroy(offsets: offsets)
                     try? viewContext.save()
+                }).onMove(perform: { indices, newOffset in
+                    eatery.move(from: indices, to: newOffset)
                 })
             }
         }
@@ -52,7 +54,7 @@ struct ReviewContentView: View {
                     Divider()
                     HStack { Text("Edit: "); TextField("Rating Field", value: $review.reviewRating, formatter: NumberFormatter(), onCommit: {
                         try? viewContext.save()
-                    }).keyboardType(.decimalPad)}
+                    })}
                 } else {
                     Text(review.userName)
                     Divider()

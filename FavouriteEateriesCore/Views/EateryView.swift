@@ -49,5 +49,15 @@ struct EateryView: View {
                 .italic()
                 .fontWeight(.light)
         }
+        if mode?.wrappedValue == .active {
+            HStack { Text("Edit: "); TextField("Description Field", text: $eatery.locationString, onCommit: {
+                try? viewContext.save()
+            })}
+        } else {
+            Text(eatery.locationString)
+                .font(.footnote)
+                .italic()
+                .fontWeight(.light)
+        }
     }
 }
