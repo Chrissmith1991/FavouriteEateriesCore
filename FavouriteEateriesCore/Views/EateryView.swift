@@ -17,7 +17,6 @@ struct EateryView: View {
                 .font(.subheadline)
                 .fontWeight(.medium)
                 .multilineTextAlignment(.leading)
-                .padding()
             Spacer()
         }.background(Color.red)
         if mode?.wrappedValue == .active {

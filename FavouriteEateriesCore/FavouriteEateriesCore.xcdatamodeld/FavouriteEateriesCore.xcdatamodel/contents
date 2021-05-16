@@ -4,6 +4,7 @@
         <attribute name="baseImage" attributeType="String" defaultValueString="noImage"/>
         <attribute name="desc" attributeType="String" defaultValueString=""/>
         <attribute name="imageURL" attributeType="String" defaultValueString=""/>
+        <attribute name="location" optional="YES" attributeType="String"/>
         <attribute name="name" attributeType="String" defaultValueString=""/>
         <attribute name="notes" attributeType="String" defaultValueString=""/>
         <relationship name="group" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EateryGroup" inverseName="eateries" inverseEntity="EateryGroup"/>
@@ -21,7 +22,7 @@
         <relationship name="eatery" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Eatery" inverseName="reviews" inverseEntity="Eatery"/>
     </entity>
     <elements>
-        <element name="Eatery" positionX="-268" positionY="-191.5" width="128" height="134"/>
+        <element name="Eatery" positionX="-268" positionY="-191.5" width="128" height="149"/>
         <element name="EateryGroup" positionX="-634.5" positionY="-314.5" width="128" height="88"/>
         <element name="Review" positionX="209" positionY="-76.5" width="128" height="103"/>
     </elements>

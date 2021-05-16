@@ -12,6 +12,10 @@ extension Review {
         get { user ?? "annon" }
         set { user = newValue }
     }
+    var reviewRating: Int16 {
+        get { raiting }
+        set { raiting = newValue }
+    }
     var reviewContent: String {
         get { content ?? "no content" }
         set { content = newValue }

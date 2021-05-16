@@ -14,9 +14,9 @@
 		EE1E9B2C2650EB2000A87BD6 /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1E9B2B2650EB2000A87BD6 /* NoteView.swift */; };
 		EE1E9B352650EED200A87BD6 /* Review+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1E9B342650EED200A87BD6 /* Review+ViewModel.swift */; };
 		EE1E9B3A2650F05500A87BD6 /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1E9B392650F05500A87BD6 /* ReviewView.swift */; };
+		EE568E272651286C006C780C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE568E262651286C006C780C /* Assets.xcassets */; };
 		EE705C91264E7F3C006CB52B /* FavouriteEateriesCoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE705C90264E7F3C006CB52B /* FavouriteEateriesCoreApp.swift */; };
 		EE705C93264E7F3C006CB52B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE705C92264E7F3C006CB52B /* ContentView.swift */; };
-		EE705C95264E7F3D006CB52B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE705C94264E7F3D006CB52B /* Assets.xcassets */; };
 		EE705C98264E7F3D006CB52B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE705C97264E7F3D006CB52B /* Preview Assets.xcassets */; };
 		EE705C9A264E7F3D006CB52B /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE705C99264E7F3D006CB52B /* Persistence.swift */; };
 		EE705C9D264E7F3D006CB52B /* FavouriteEateriesCore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE705C9B264E7F3D006CB52B /* FavouriteEateriesCore.xcdatamodeld */; };
@@ -48,16 +48,21 @@
 		EE1E9AF02650B62000A87BD6 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		EE1E9AF52650BAE500A87BD6 /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
 		EE1E9AFB2650BD9A00A87BD6 /* ImageUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUtility.swift; sourceTree = "<group>"; };
-		EE1E9B162650E86600A87BD6 /* Eatery+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Eatery+CoreDataClass.swift"; path = "../Eatery+CoreDataClass.swift"; sourceTree = "<group>"; };
 		EE1E9B262650EA8B00A87BD6 /* EateryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EateryView.swift; sourceTree = "<group>"; };
 		EE1E9B2B2650EB2000A87BD6 /* NoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteView.swift; sourceTree = "<group>"; };
-		EE1E9B302650EB8C00A87BD6 /* Eatery+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Eatery+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		EE1E9B342650EED200A87BD6 /* Review+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Review+ViewModel.swift"; sourceTree = "<group>"; };
 		EE1E9B392650F05500A87BD6 /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
+		EE568E0226512095006C780C /* Eatery+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Eatery+CoreDataClass.swift"; sourceTree = "<group>"; };
+		EE568E0326512095006C780C /* Review+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Review+CoreDataClass.swift"; sourceTree = "<group>"; };
+		EE568E0426512095006C780C /* Eatery+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Eatery+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EE568E0526512095006C780C /* EateryGroup+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EateryGroup+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EE568E0626512095006C780C /* EateryGroup+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EateryGroup+CoreDataClass.swift"; sourceTree = "<group>"; };
+		EE568E0726512095006C780C /* Review+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Review+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EE568E262651286C006C780C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../7421ICT_Favourite_Eateries/FavouriteEateries/Assets.xcassets; sourceTree = "<group>"; };
+		EE568E2E2651301C006C780C /* Eatery+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Eatery+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		EE705C8D264E7F3C006CB52B /* FavouriteEateriesCore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FavouriteEateriesCore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE705C90264E7F3C006CB52B /* FavouriteEateriesCoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteEateriesCoreApp.swift; sourceTree = "<group>"; };
 		EE705C92264E7F3C006CB52B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		EE705C94264E7F3D006CB52B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE705C97264E7F3D006CB52B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EE705C99264E7F3D006CB52B /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		EE705C9C264E7F3D006CB52B /* FavouriteEateriesCore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FavouriteEateriesCore.xcdatamodel; sourceTree = "<group>"; };
@@ -70,11 +75,7 @@
 		EE705CB4264E7F3D006CB52B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEC8D7D8264F54B0004BD4F6 /* Eatery+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Eatery+ViewModel.swift"; sourceTree = "<group>"; };
 		EEC8D7DE264F5949004BD4F6 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
-		EEC8D7F6264F5FFB004BD4F6 /* EateryGroup+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EateryGroup+CoreDataClass.swift"; sourceTree = "<group>"; };
-		EEC8D7F8264F5FFB004BD4F6 /* Review+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Review+CoreDataClass.swift"; sourceTree = "<group>"; };
 		EEC8D800264F6384004BD4F6 /* EateryGroup+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EateryGroup+ViewModel.swift"; sourceTree = "<group>"; };
-		EEC8D806264F6584004BD4F6 /* Review+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Review+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		EEC8D807264F6584004BD4F6 /* EateryGroup+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EateryGroup+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +111,20 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
+		EE568E0126512095006C780C /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				EE568E2E2651301C006C780C /* Eatery+CoreDataProperties.swift */,
+				EE568E0226512095006C780C /* Eatery+CoreDataClass.swift */,
+				EE568E0326512095006C780C /* Review+CoreDataClass.swift */,
+				EE568E0426512095006C780C /* Eatery+CoreDataProperties.swift */,
+				EE568E0526512095006C780C /* EateryGroup+CoreDataProperties.swift */,
+				EE568E0626512095006C780C /* EateryGroup+CoreDataClass.swift */,
+				EE568E0726512095006C780C /* Review+CoreDataProperties.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		EE705C84264E7F3C006CB52B = {
 			isa = PBXGroup;
 			children = (
@@ -133,12 +148,12 @@
 		EE705C8F264E7F3C006CB52B /* FavouriteEateriesCore */ = {
 			isa = PBXGroup;
 			children = (
+				EE568E262651286C006C780C /* Assets.xcassets */,
+				EE568E0126512095006C780C /* Entities */,
 				EE1E9AFA2650BD8800A87BD6 /* Utility */,
 				EEC8D7DD264F5922004BD4F6 /* Views */,
 				EEC8D7CF264F53E7004BD4F6 /* Models */,
-				EE705CCE264E80DD006CB52B /* Entities */,
 				EE705C90264E7F3C006CB52B /* FavouriteEateriesCoreApp.swift */,
-				EE705C94264E7F3D006CB52B /* Assets.xcassets */,
 				EE705C99264E7F3D006CB52B /* Persistence.swift */,
 				EE705C9E264E7F3D006CB52B /* Info.plist */,
 				EE705C9B264E7F3D006CB52B /* FavouriteEateriesCore.xcdatamodeld */,
@@ -172,19 +187,6 @@
 			);
 			path = FavouriteEateriesCoreUITests;
 			sourceTree = "<group>";
-		};
-		EE705CCE264E80DD006CB52B /* Entities */ = {
-			isa = PBXGroup;
-			children = (
-				EE1E9B302650EB8C00A87BD6 /* Eatery+CoreDataProperties.swift */,
-				EE1E9B162650E86600A87BD6 /* Eatery+CoreDataClass.swift */,
-				EEC8D7F6264F5FFB004BD4F6 /* EateryGroup+CoreDataClass.swift */,
-				EEC8D807264F6584004BD4F6 /* EateryGroup+CoreDataProperties.swift */,
-				EEC8D7F8264F5FFB004BD4F6 /* Review+CoreDataClass.swift */,
-				EEC8D806264F6584004BD4F6 /* Review+CoreDataProperties.swift */,
-			);
-			path = Entities;
-			sourceTree = SOURCE_ROOT;
 		};
 		EEC8D7CF264F53E7004BD4F6 /* Models */ = {
 			isa = PBXGroup;
@@ -314,7 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE705C98264E7F3D006CB52B /* Preview Assets.xcassets in Resources */,
-				EE705C95264E7F3D006CB52B /* Assets.xcassets in Resources */,
+				EE568E272651286C006C780C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

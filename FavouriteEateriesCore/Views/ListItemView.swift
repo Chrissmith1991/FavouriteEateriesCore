@@ -17,19 +17,23 @@ struct ListItemView: View {
                  TextField("Image URL", text: $eatery.imageLink, onCommit: {
                     try? viewContext.save()
                  })
+                TextField("Location", text: $eatery.locationString, onCommit: {
+                   try? viewContext.save()
+                })
              } else {
                 if eatery.imageLink == "" && eatery.blankImage != "" {
                     Image(eatery.blankImage)
                 } else {
                      getImageFromUrl(url: eatery.imageLink)
                 }
+                Text(eatery.locationString)
              }
              NavigationLink(
-                 destination: DetailView(eatery: eatery)
+                destination: DetailView(eatery: eatery)
                      .navigationBarItems(
                      trailing: EditButton()
                      ),
-                 label: {
+                label: {
                      if mode?.wrappedValue == .active {
                          TextField("Eatery Name", text: $eatery.nameString, onCommit: {
                             try? viewContext.save()
@@ -39,6 +43,7 @@ struct ListItemView: View {
                      }
                  }
              )
+            
          }
     }
 }

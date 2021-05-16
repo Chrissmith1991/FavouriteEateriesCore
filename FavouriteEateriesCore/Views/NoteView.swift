@@ -17,7 +17,6 @@ struct NoteView: View {
                 .font(.subheadline)
                 .fontWeight(.medium)
                 .multilineTextAlignment(.leading)
-                .padding()
             Spacer()
         }.background(Color.green)
         if mode?.wrappedValue == .active {

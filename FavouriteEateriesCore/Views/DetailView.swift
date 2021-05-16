@@ -16,7 +16,9 @@ struct DetailView: View {
     @Environment(\.editMode) var mode
     @ObservedObject var eatery: Eatery
     var body: some View {
-        ScrollView {
+        if (eatery.isFault) {
+            EmptyView()
+        } else {
             EateryView(eatery: eatery)
             NoteView(eatery: eatery)
             ReviewView(eatery: eatery)

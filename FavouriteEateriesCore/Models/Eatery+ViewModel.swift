@@ -26,6 +26,10 @@ extension Eatery {
     var blankImage: String {
         get { baseImage ?? "noImage" }
     }
+    var locationString: String {
+        get { location ?? "no location" }
+        set { location = newValue }
+    }
     var noteString: String {
         get { notes ?? "" }
         set { notes = newValue }

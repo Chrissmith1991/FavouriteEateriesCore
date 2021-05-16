@@ -22,6 +22,7 @@ struct ReviewView: View {
                 Button(action: {
                     withAnimation {
                         eatery.create()
+                        try? viewContext.save()
                     }
                 }, label: { Image(systemName: "plus") })
             }.background(Color.orange)
@@ -48,8 +49,14 @@ struct ReviewContentView: View {
                     HStack { Text("Edit: "); TextField("Username Field", text: $review.userName, onCommit: {
                         try? viewContext.save()
                     })}
+                    Divider()
+                    HStack { Text("Edit: "); TextField("Rating Field", value: $review.reviewRating, formatter: NumberFormatter(), onCommit: {
+                        try? viewContext.save()
+                    }).keyboardType(.decimalPad)}
                 } else {
                     Text(review.userName)
+                    Divider()
+                    Text("Raiting: \(review.reviewRating)")
                 }
             }
             if mode?.wrappedValue == .active {
